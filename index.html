@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>D-alculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>        
+        <main>
+            <p>
+                D-alculator
+            </p>
+            <div class="calculator">
+                <input id="operation" value="0" type="hidden"> <!--Stores hidden calculator data-->
+                <input id="operand" value="" type="hidden"> <!--Stores the number typed before an operator-->
+                <input id="equivalent" value="0" type="hidden">
+                <input id="decimalVar" value="0" type="hidden">
+
+                <table>
+                    <div class="display" id="display">
+                        <input type="text" id="screenDisplay" name="screenDisplay" value="0" maxlength="13" readonly>
+                    </div>
+                    <tr>
+                        <td class="function"><input type="button" id="percent" name="percent" value="&percnt;" onclick="percent()"></td>
+                        <td class="function"><input type="button" id="clearEntry" name="clearEntry" value="CE" onclick="clearEntry()"></td>
+                        <td class="function"><input type="button" id="clearAll" name="clearAll" value="C" onclick="clearAll()"></td>
+                        <td class="function"><input type="button" id="backSpace" name="backSpace" value="&larr;" onclick="clearOne()"></td> 
+                    </tr>
+                    <tr>
+                        <td class="function"><input type="button" id="degree" name="degree" value="x&deg;" onclick="degree()"></td>
+                        <td class="function"><input type="button" id="square" name="square" value="x&sup2;" onclick="square()"></td>
+                        <td class="function"><input type="button" id="squareroot" name="squareroot" value="&radic;x" onclick="squareRoot()"></td>
+                        <td class="operator"><input type="button" id="divide" name="divide" value="&divide;" onclick="operator(1)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="seven" name="seven" value="7" onclick="input(7)"></td>
+                        <td><input type="button" id="eight" name="eight" value="8" onclick="input(8)"></td>
+                        <td><input type="button" id="nine" name="nine" value="9" onclick="input(9)"></td>
+                        <td class="operator"><input type="button" id="times" name="times" value="&times;" onclick="operator(2)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="four" name="four" value="4" onclick="input(4)"></td>
+                        <td><input type="button" id="five" name="five" value="5" onclick="input(5)"></td>
+                        <td><input type="button" id="six" name="six" value="6" onclick="input(6)"></td>
+                        <td class="operator"><input type="button" id="minus" name="minus" value="&minus;" onclick="operator(3)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="one" name="one" value="1" onclick="input(1)"></td>
+                        <td><input type="button" id="two" name="two" value="2" onclick="input(2)"></td>
+                        <td><input type="button" id="three" name="three" value="3" onclick="input(3)"></td>
+                        <td class="operator"><input type="button" id="plus" name="plus" value="&plus;" onclick="operator(4)"></td>
+                    </tr>
+                    <tr>
+                        <td class="operator"><input type="button" id="plusminus" name="plusminus" value="&plusmn;" onclick="plusminus()"></td>
+                        <td><input type="button" id="zero" name="zero" value="0" onclick="input(0)"></td>
+                        <td><input type="button" id="decimal" name="decimal" value="&sdot;" onclick="decimalPoint()"></td>
+                        <td id="equals"><input type="button" id="equals" name="equals" value="&equals;" onclick="equals()"></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </main>
+    </body>
+</html>
