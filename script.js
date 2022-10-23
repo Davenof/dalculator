@@ -34,14 +34,6 @@ function input(x) {
 
         document.getElementById('decimalVar').value = decimalCount;
     }
-
-    // I believe these are the extra codes
-    if (document.getElementById('screenDisplay').value == 0) {
-        document.getElementById('screenDisplay').value = x;
-    }
-    else {
-        document.getElementById('screenDisplay').value = x; //This line is the same as the else statement below
-    }
 }
 
 //This checks the input before an operator was used
@@ -126,7 +118,7 @@ function equals() {
 
 // DECIMAL POINT
 function decimalPoint() {
-    if (document.getElementById('decimalVar').value == 1) { // This function prevents multiple decimal points
+    if (document.getElementById('decimalVar').value == 0) { // This function prevents multiple decimal points
         document.getElementById('decimalVar').value = 1;
     }
 
