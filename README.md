@@ -1,7 +1,7 @@
 <p>Version 1.0 is the current version of D-Calculator. </p>
 
 <p>
-  The calculator is meant to be a multi-purpose calculator with functionalities that are beyond basic arithmetic. Hence, the final goal is to have a calculator that computes complex mathematical and statistical problems.
+  The calculator is meant to be a multipurpose calculator with functionalities that are beyond basic arithmetic. Hence, the final goal is to have a calculator that computes complex mathematical and statistical problems.
 </p>
   
  <p>
