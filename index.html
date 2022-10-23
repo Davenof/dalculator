@@ -10,7 +10,8 @@
     <body>        
         <main>
             <p>
-                D-Calculator
+                D-Calculator <br>
+                <span class="version">Version 1.0</span>
             </p>
             <div class="calculator">
                 <input id="operation" value="0" type="hidden"> <!--Stores hidden calculator data-->
@@ -23,15 +24,9 @@
                         <input type="text" id="screenDisplay" name="screenDisplay" value="0" maxlength="13" readonly>
                     </div>
                     <tr>
-                        <td class="function"><input type="button" id="percent" name="percent" value="&percnt;" onclick="percent()"></td>
-                        <td class="function"><input type="button" id="clearEntry" name="clearEntry" value="CE" onclick="clearEntry()"></td>
                         <td class="function"><input type="button" id="clearAll" name="clearAll" value="C" onclick="clearAll()"></td>
-                        <td class="function"><input type="button" id="backSpace" name="backSpace" value="&larr;" onclick="clearOne()"></td> 
-                    </tr>
-                    <tr>
-                        <td class="function"><input type="button" id="degree" name="degree" value="x&deg;" onclick="degree()"></td>
                         <td class="function"><input type="button" id="square" name="square" value="x&sup2;" onclick="square()"></td>
-                        <td class="function"><input type="button" id="squareroot" name="squareroot" value="&radic;x" onclick="squareRoot()"></td>
+                        <td class="function"><input type="button" id="percent" name="percent" value="&percnt;" onclick="percent()"></td>
                         <td class="operator"><input type="button" id="divide" name="divide" value="&divide;" onclick="operator(1)"></td>
                     </tr>
                     <tr>
