@@ -1,1 +1,1 @@
-Currently, this calculator is not fully-functional. It's functionality is underway.
+This calculator is an unfinished project. Its functionality is currently partial. Although it does basic multiplication, division, addition, and subtraction correctly, it doesn't display the operators performing the math. However, I'll revisit the project soon to make the calculator function the way it should.
